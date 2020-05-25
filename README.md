@@ -1,5 +1,23 @@
+# Astra Demo - Cassandra DBaaS
 
-# Create the Database
+This project is a sample for demanstrate the use of Datastax ASTRA the Cassandra DBaaS
+
+It has been inspired by the work of Adron Hall :
+
+https://dev.to/betterbotz/creating-an-express-server-for-better-botz-4b00
+https://www.datastax.com/blog/2020/03/introducing-better-botz
+https://github.com/DataStax-Academy/better-botz-workshop-online
+
+In this projects, we will going to use Java and Spring.
+
+The prerequisites :
+
+Java 1.8 : https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+Maven : http://maven.apache.org/
+A Java IDE, I've used Spring Tools Suite : https://spring.io/tools#suite-three
+
+
+## Create the Database
 
 To register use this link :
 
