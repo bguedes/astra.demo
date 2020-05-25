@@ -98,11 +98,6 @@ Just play creating products and remove them !!! Enjoy ....
 
 Let parameters by default :
 
-
-# Get a sample project
-
-## Create a sample project
-
 **Project :*
 	Maven Project
 
@@ -670,3 +665,6 @@ WARNING: All illegal access operations will be denied in a future release
 http://localhost:8080/api/v1/products
 
 ![](https://raw.githubusercontent.com/bguedes/static/master/astraDemoProductsList.png)
+
+## Rest client usage
+
