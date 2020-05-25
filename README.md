@@ -1,5 +1,5 @@
 
-##Create the Database
+# Create the Database
 
 To register use this link :
 
@@ -16,16 +16,16 @@ To register use this link :
 Let parameters by default :
 
 **Compute Size**
-	Free tier
+    Free tier
 **Estimated Cost**
-	Per Hour
+    Per Hour
 
 Specify these parameters :
 
-**Database name**			astrademo
-**Keyspace name**			astrademo
-**Database username**		datastax
-**Database user password**	datastax
+**Database name**           astrademo
+**Keyspace name**	    astrademo
+**Database username**       datastax
+**Database user password**  datastax
 
 
 The database creation could take some minutes to acheive :
@@ -46,7 +46,7 @@ The file is called **secure-connect-astrademo.zip**
 
 For the database that's all Folks
 
-##Get a sample project
+## Get a sample project
 
 You can use a sample project cloning this github repository :
 
@@ -74,16 +74,16 @@ You'll get the product list screen :
 
 Just play creating products and remove them !!! Enjoy ....
 
-##Create a sample project
+## Create a sample project
 
 [Spring Initializer](https://start.spring.io/)
 
 Let parameters by default :
 
 
-##Get a sample project
+# Get a sample project
 
-##Create a sample project
+## Create a sample project
 
 **Project :*
 	Maven Project
