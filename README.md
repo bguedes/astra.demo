@@ -13,8 +13,7 @@ In this projects, we will going to use Java and Spring.
 The prerequisites :
 
 Java 1.8 : https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</br>
-Maven : http://maven.apache.org/</br>
-A Java IDE, I've used Spring Tools Suite : https://spring.io/tools#suite-three</br>
+Any IDE, I've used Spring Tools Suite : https://spring.io/tools#suite-three</br>
 
 
 ## Create the Database
@@ -44,7 +43,8 @@ Specify these parameters :
 **Keyspace name**	    astrademo</br>
 **Database username**       datastax</br>
 **Database user password**  datastax</br>
-
+</br>
+**Database location**  europe-west1</br>
 
 The database creation could take some minutes to acheive :
 
@@ -79,7 +79,7 @@ You just need to copy your zip file **secure-connect-astrademo.zip** downloaded 
 Just launch Spring :
 
 ```console
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 Open a web client :
@@ -624,7 +624,7 @@ $(document).ready(function(){
 ```
 
 ```console
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ```console
