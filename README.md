@@ -33,10 +33,10 @@ To register use this link :
 
 Let parameters by default :
 
-**Compute Size**
-    Free tier
-**Estimated Cost**
-    Per Hour
+**Compute Size**</br>
+    Free tier</br>
+**Estimated Cost**</br>
+    Per Hour</br>
 
 Specify these parameters :
 
