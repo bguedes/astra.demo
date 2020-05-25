@@ -1,0 +1,7 @@
+cassandra:
+  keyspaceName: astrademo
+  
+spring:
+  data:
+    cassandra:
+      schemaAction: CREATE_IF_NOT_EXISTS 
