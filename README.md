@@ -45,7 +45,7 @@ Specify these parameters :
 **Database username**       datastax</br>
 **Database user password**  datastax</br>
 </br>
-**Database user password**  europe-west1</br>
+**Database location**  europe-west1</br>
 
 The database creation could take some minutes to acheive :
 
