@@ -668,3 +668,29 @@ http://localhost:8080/api/v1/products
 
 ## Rest client usage
 
+For the demo purpose it has been used this REST client :</br>
+https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
+
+### Get all products list
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restGetAllProducts.png)
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restGetAllProductsResult.png)
+
+### Adding a new product
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restGetAddingProduct.png)
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restGetAddingProductResult.png)
+
+### Delete a specific product
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restDeleteProduct.png)
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restDeleteProductResult.png)
+
+### View a specific product
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restGetProduct.png)
+
+![](https://raw.githubusercontent.com/bguedes/static/master/restGetProductResult.png)
