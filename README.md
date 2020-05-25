@@ -671,6 +671,8 @@ http://localhost:8080/api/v1/products
 For the demo purpose it has been used this REST client :</br>
 https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
 
+It's up to you to use another Rest client or curl ...
+
 ### Get all products list
 
 ![](https://raw.githubusercontent.com/bguedes/static/master/restGetAllProducts.png)
