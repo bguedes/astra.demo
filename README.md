@@ -48,6 +48,32 @@ For the database that's all Folks
 
 ##Get a sample project
 
+You can use a sample project cloning this github repository :
+
+```console
+https://github.com/bguedes/astra.demo.git
+```
+
+You just need to copy your zip file **secure-connect-astrademo.zip** downloaded before and copy it on the <projec folder>
+
+![](https://raw.githubusercontent.com/bguedes/static/master/astraBundleFile.png)
+
+Just launch Spring :
+
+```console
+mvn spring-boot:run
+```
+
+Open a web client :
+
+http://localhost:8080/api/v1/products
+
+You'll get the product list screen :
+
+![](https://raw.githubusercontent.com/bguedes/static/master/astraDemoProductsList.png)
+
+Just play creating products and remove them !!! Enjoy ....
+
 ##Create a sample project
 
 [Spring Initializer](https://start.spring.io/)
@@ -113,6 +139,10 @@ Specify these parameters :
 Generate the project and download the project jar
 
 ![](https://raw.githubusercontent.com/bguedes/static/master/SpringInitialiserFinished.png)
+
+
+![](https://raw.githubusercontent.com/bguedes/static/master/projectPackageExplorerSimple.png)
+
 
 **application.conf**
 
