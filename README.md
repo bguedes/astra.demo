@@ -253,18 +253,18 @@ import lombok.Data;
 @Data
 public class Order {
 
-	@Column("customer_name")
-	@PrimaryKeyColumn(type = PrimaryKeyType.PARTITIONED)
+    @Column("customer_name")
+    @PrimaryKeyColumn(type = PrimaryKeyType.PARTITIONED)
     private String customerName;
 
     private UUID id;
 
     private String address;
 
-	@Column("prod_id")
+    @Column("prod_id")
     private UUID prouctdId;
 
-	@Column("prod_name")
+    @Column("prod_name")
     private String productName;
 
 
@@ -272,7 +272,7 @@ public class Order {
 
     private float price;
 
-	@Column("sell_price")
+    @Column("sell_price")
     private float sellPrice;
 
 }
@@ -421,29 +421,29 @@ public class ProductController {
 
 	@GetMapping("/products")
 	public String products(@ModelAttribute("model") ModelMap model) {
-		model.addAttribute("products", productService.findAll());
-		return "products";
+	    model.addAttribute("products", productService.findAll());
+	    return "products";
 	}
 
 	@GetMapping("/product/{productName}")
 	public ResponseEntity<Product> findProductsByName(@PathVariable String productName) {
-		Product productRetreived = productService.findByName(productName);
-        return new ResponseEntity<Product>(productRetreived, HttpStatus.OK);
+	    Product productRetreived = productService.findByName(productName);
+            return new ResponseEntity<Product>(productRetreived, HttpStatus.OK);
 	}
 
 
 	@PostMapping("/product")
 	public String add(Product product) {
-		product.setId(UUID.randomUUID());
-		product.setCreated(new Date(System.currentTimeMillis()));
-		productService.add(product);
-		return "redirect:/api/v1/products";
+	    product.setId(UUID.randomUUID());
+	    product.setCreated(new Date(System.currentTimeMillis()));
+	    productService.add(product);
+	    return "redirect:/api/v1/products";
 	}
 
 	@DeleteMapping("/product/{productName}")
 	public ResponseEntity<String> delete(@PathVariable String productName) {
-		productService.remove(productName);
-        return new ResponseEntity<String>(productName, HttpStatus.OK);		
+	    productService.remove(productName);
+            return new ResponseEntity<String>(productName, HttpStatus.OK);		
 	}
 }
 ```
@@ -473,42 +473,42 @@ import com.datastax.oss.driver.api.core.CqlSession;
 @SpringBootApplication
 public class Application implements CommandLineRunner 	{
 
-	@Autowired
-	private CqlSession astraSession;
+    @Autowired
+    private CqlSession astraSession;
 
     @Value("classpath:cql/products.cql")
     private Resource cqlImport;
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+	    SpringApplication.run(Application.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		loadDataUsingCQL();
+	    loadDataUsingCQL();
 	}
 
 	private void loadDataUsingCQL() {
 
-		List<String> cqlScripts = new ArrayList<>();
+	    List<String> cqlScripts = new ArrayList<>();
 
-		try (InputStream inputStream = cqlImport.getInputStream()) {
+	    try (InputStream inputStream = cqlImport.getInputStream()) {
 
-			ByteArrayOutputStream result = new ByteArrayOutputStream();
-			byte[] buffer = new byte[1024];
-			int length;
-			while ((length = inputStream.read(buffer)) != -1) {
-			    result.write(buffer, 0, length);
-			}
-
-			cqlScripts = Arrays.asList(result.toString("UTF-8").split(";"));
-		} catch (IOException e) {
-			e.printStackTrace();
+	        ByteArrayOutputStream result = new ByteArrayOutputStream();
+		byte[] buffer = new byte[1024];
+		int length;
+		while ((length = inputStream.read(buffer)) != -1) {
+                    result.write(buffer, 0, length);
 		}
 
-		for (String cqlScript : cqlScripts) {
-			astraSession.execute(cqlScript);
-		}
+		cqlScripts = Arrays.asList(result.toString("UTF-8").split(";"));
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+
+	    for (String cqlScript : cqlScripts) {
+	        astraSession.execute(cqlScript);
+	    }
 	}
 
 }
@@ -549,7 +549,7 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 $(document).ready(function(){
     $('.bnt-delete-product').click(function() {
 
-   		var productName = $(this).val();
+   	var productName = $(this).val();
 
         $.ajax({
             type: "DELETE",
