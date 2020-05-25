@@ -4,17 +4,17 @@ This project is a sample for demanstrate the use of Datastax ASTRA the Cassandra
 
 It has been inspired by the work of Adron Hall :
 
-https://dev.to/betterbotz/creating-an-express-server-for-better-botz-4b00
-https://www.datastax.com/blog/2020/03/introducing-better-botz
-https://github.com/DataStax-Academy/better-botz-workshop-online
+https://dev.to/betterbotz/creating-an-express-server-for-better-botz-4b00</br>
+https://www.datastax.com/blog/2020/03/introducing-better-botz</br>
+https://github.com/DataStax-Academy/better-botz-workshop-online</br>
 
 In this projects, we will going to use Java and Spring.
 
 The prerequisites :
 
-Java 1.8 : https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
-Maven : http://maven.apache.org/
-A Java IDE, I've used Spring Tools Suite : https://spring.io/tools#suite-three
+Java 1.8 : https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</br>
+Maven : http://maven.apache.org/</br>
+A Java IDE, I've used Spring Tools Suite : https://spring.io/tools#suite-three</br>
 
 
 ## Create the Database
@@ -40,10 +40,10 @@ Let parameters by default :
 
 Specify these parameters :
 
-**Database name**           astrademo
-**Keyspace name**	    astrademo
-**Database username**       datastax
-**Database user password**  datastax
+**Database name**           astrademo</br>
+**Keyspace name**	    astrademo</br>
+**Database username**       datastax</br>
+**Database user password**  datastax</br>
 
 
 The database creation could take some minutes to acheive :
