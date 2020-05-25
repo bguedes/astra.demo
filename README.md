@@ -44,7 +44,8 @@ Specify these parameters :
 **Keyspace name**	    astrademo</br>
 **Database username**       datastax</br>
 **Database user password**  datastax</br>
-
+</br>
+**Database user password**  europe-west1</br>
 
 The database creation could take some minutes to acheive :
 
